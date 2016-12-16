@@ -9,7 +9,6 @@ class Client
     private $apiKey;
 
     private $url = 'https://api.convertloop.co/v1/';
-    // private $url = 'http://api.lvh.me:3000/v1/';
 
     public function __construct($appId, $apiKey) {
         $this->appId = $appId;

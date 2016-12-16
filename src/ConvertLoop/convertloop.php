@@ -15,6 +15,6 @@ class ConvertLoop
     }
 
     public function eventLogs() {
-
+        return new EventLogs($this->client);
     }
 }
