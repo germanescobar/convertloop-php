@@ -19,5 +19,11 @@
         "psr-4": {
             "ConvertLoop\\": "src/"
         }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8"
+    },
+    "scripts": {
+        "test": "phpunit"
     }
 }

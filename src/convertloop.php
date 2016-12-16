@@ -6,8 +6,8 @@ class ConvertLoop
 {
     private $client;
 
-    public function __construct($appId, $apiKey, $data = '') {
-        $this->client = new Client($appId, $apiKey);
+    public function __construct($appId, $apiKey, $version) {
+        $this->client = new Client($appId, $apiKey, $version);
     }
 
     public function people() {
@@ -16,5 +16,9 @@ class ConvertLoop
 
     public function eventLogs() {
         return new EventLogs($this->client);
+    }
+
+    public function setBaseUrl($baseUrl) {
+      $this->client->setBaseUrl($baseUrl);
     }
 }
