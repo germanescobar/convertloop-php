@@ -11,7 +11,7 @@ class People
     }
 
     public function createOrUpdate($data) {
-        return $this->client.post("/people", $data);
+        return $this->client->post("/people", $data);
     }
 }
 
