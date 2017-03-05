@@ -53,8 +53,8 @@ You can add or remove tags using the `add_tags` and `remove_tags` keys:
 ```php
 $person = array(
     "email" => "german.escobar@convertloop.co",
-    "addTags" => array("Learn Something"),
-    "removeTags" => array("Lead")
+    "add_tags" => array("Learn Something"),
+    "remove_tags" => array("Lead")
 );
 $convertloop->people()->createOrUpdate($person);
 ```
