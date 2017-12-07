@@ -48,13 +48,13 @@ $convertloop->people()->createOrUpdate($person);
 
 Any key different to `pid`, `user_id`, `email`, `first_seen_at`, `last_seen_at`, `add_tags`, and `remove_tags` will be treated as a **custom attribute** of the person.
 
-You can add or remove tags using the `add_tags` and `remove_tags` keys:
+You can add or remove people from a segment ussing the  `add_to_segments` and `remove_from_segments` keys:
 
 ```php
 $person = array(
     "email" => "german.escobar@convertloop.co",
-    "add_tags" => array("Learn Something"),
-    "remove_tags" => array("Lead")
+    "add_to_segments" => array("Learn Something"),
+    "remove_from_segments" => array("Segment 1")
 );
 $convertloop->people()->createOrUpdate($person);
 ```
