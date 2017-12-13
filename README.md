@@ -46,7 +46,7 @@ $person = array(
 $convertloop->people()->createOrUpdate($person);
 ```
 
-Any key different to `pid`, `user_id`, `email`, `first_seen_at`, `last_seen_at`, `add_tags`, and `remove_tags` will be treated as a **custom attribute** of the person.
+Any key different to `pid`, `user_id`, `email`, `first_seen_at`, `last_seen_at`, `add_to_segments`, and `remove_from_segments` will be treated as a **custom attribute** of the person.
 
 You can add or remove people from a segment ussing the  `add_to_segments` and `remove_from_segments` keys:
 
