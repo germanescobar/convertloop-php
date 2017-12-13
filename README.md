@@ -74,4 +74,4 @@ $event = array(
 $convertloop->eventLogs()->send($event);
 ```
 
-If you don't specify the `ocurred_at` key, the current time will be used. You can use the `person` key to add **custom attributes** and **tags** to that person.
+If you don't specify the `ocurred_at` key, the current time will be used. You can use the `person` key to add **custom attributes** to that person, or add or remove that person to/from **segments**.
